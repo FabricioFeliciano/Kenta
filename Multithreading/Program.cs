@@ -24,7 +24,8 @@ namespace Multithread
             var val = 1;
             do
             {
-                Console.WriteLine(val);
+                Console.WriteLine($"Progressão Aritmética: {val}");
+                Thread.Sleep(1000);
                 val += 2;
             } while (val <= 1000);
         }
@@ -33,7 +34,8 @@ namespace Multithread
             var val = 1;
             do
             {
-                Console.WriteLine(val);
+                Console.WriteLine($"Progressão Geométrica: {val}");
+                Thread.Sleep(1000);
                 val = val * 2;
             } while (val <= 1000);
         }
@@ -57,7 +59,8 @@ namespace Multithread
                     }
                     //Se for primo imprime no console
                     if (primo)
-                        Console.WriteLine($"{i} é primo");
+                        Console.WriteLine($"Primos: {i} é primo");
+                    Thread.Sleep(1000);
                 }
             }
         }
